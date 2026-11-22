@@ -1,0 +1,23 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="capriaddon"
+version="0.1.0"
+displayName="CapriAddon"
+description='''Addon for Chromeware and Create.'''
+
+[[dependencies.capriaddon]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.235,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.capriaddon]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1]"
+ordering="NONE"
+side="BOTH"
