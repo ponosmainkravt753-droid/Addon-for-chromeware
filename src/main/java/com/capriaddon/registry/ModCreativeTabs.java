@@ -6,13 +6,14 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.core.registries.Registries;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.DeferredHolder;
 
 public class ModCreativeTabs {
 
     public static final DeferredRegister<CreativeModeTab> TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, "capriaddon");
 
-    public static final DeferredRegister<CreativeModeTab>.DeferredHolder<CreativeModeTab, CreativeModeTab> CAPRI_TAB =
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> CAPRI_TAB =
             TABS.register("capriaddon", () -> CreativeModeTab.builder()
                     .title(Component.literal("CapriAddon"))
                     .icon(() -> new ItemStack(ModItems.CAPRI_CORE.get()))
