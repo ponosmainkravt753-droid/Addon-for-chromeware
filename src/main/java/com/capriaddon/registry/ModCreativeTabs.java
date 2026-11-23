@@ -23,3 +23,4 @@ public class ModCreativeTabs {
                         output.accept(ModItems.CYBERDECK_COMPONENT.get());
                     })
                     .build());
+}
